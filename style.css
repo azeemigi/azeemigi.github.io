@@ -113,6 +113,21 @@ html, body {
 }
 .meta { color: var(--muted); margin-top: 10px; }
 
+/* ✨ Updated Experience Section Styling */
+.card h3 {
+  font-weight: 600;       
+  color: var(--accent-dark);
+  font-size: 1.1rem;      
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.card h3 .tenure {
+  font-weight: 400;
+  color: var(--accent-dark);
+  font-size: 0.95rem;
+}
+
 /* Grid */
 .grid {
   display: grid;
@@ -131,7 +146,6 @@ html, body {
   padding: 0;
 }
 
-/* Other / Lists */
 .exp,
 .awards,
 .edu {
@@ -181,24 +195,18 @@ html, body {
   .hero__photo-wrap { margin: 0 auto; }
 }
 
-
 /* Mobile: keep brand, hide nav links */
 @media (max-width: 600px) {
   .nav {
-    /* keep sticky behavior + compact spacing */
     padding: 10px 16px;
   }
-
   .nav__brand {
     font-size: 18px;
     font-weight: 700;
   }
-
   .nav__links {
-    display: none;  /* hide the menu links on small screens */
+    display: none;
   }
-
-  /* Give the hero a little breathing room below sticky header */
   .hero {
     margin-top: 8px;
   }
@@ -210,7 +218,6 @@ html, body {
 
 @media print {
 
-  /* Keep all colours and visual styles */
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -223,13 +230,11 @@ html, body {
     line-height: 1.45 !important;
   }
 
-  /* Hide only what should not print */
   .nav,
   .footer {
     display: none !important;
   }
 
-  /* HERO — keep layout, tighten spacing */
   .hero {
     padding: 20px !important;
     box-shadow: none !important;
@@ -240,21 +245,18 @@ html, body {
     grid-gap: 16px !important;
   }
 
-  /* Fix whitespace caused by page-break-inside: avoid */
   .section,
   .card {
     page-break-inside: auto !important;
     break-inside: auto !important;
   }
 
-  /* Reduce card spacing for print */
   .card {
     margin-bottom: 10px !important;
     padding: 14px 16px !important;
     box-shadow: none !important;
   }
 
-  /* Reduce excessive spacing inside lists */
   .skills li,
   .exp li,
   .awards li,
@@ -263,20 +265,32 @@ html, body {
     line-height: 1.4 !important;
   }
 
-  /* Prevent cramped 3-column grids on narrow print pages */
   .grid {
     grid-template-columns: 1fr 1fr !important;
     grid-gap: 10px !important;
   }
 
-  /* Icons: keep alignment stable if they fail to print */
   i.fa, i.fas, i.far, i.fab {
     width: 14px !important;
     margin-right: 6px !important;
   }
 
-  /* Avoid splitting headings from content */
   h2, h3 {
     page-break-after: avoid !important;
+  }
+
+  /* ✨ Print overrides for experience headings */
+  .card h3 {
+    font-size: 1rem !important;
+    color: var(--accent-dark) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.4rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .card h3 .tenure {
+    color: var(--accent-dark) !important;
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
   }
 }
