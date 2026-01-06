@@ -24,12 +24,12 @@ This is my professional portfolio and CV website, built with clean, modern HTML 
 
 ## License
 
-This work is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC-BY-NC-ND 4.0)](LICENSE).
+Copyright © 2026 Azeem Mumtaz. All Rights Reserved.
+
+See [LICENSE](LICENSE) file for details.
 
 **What this means:**
-- ✅ You may view and share a link to this portfolio
-- ✅ Attribution to Azeem Mumtaz is required
-- ❌ No commercial use permitted
-- ❌ No modifications or derivatives allowed
-
-© 2026 Azeem Mumtaz. All rights reserved.
+- ✅ View this portfolio for professional purposes (recruitment, hiring, networking)
+- ✅ Share links to this portfolio
+- ✅ Print for personal reference during recruitment processes
+- ❌ No reproduction, modification, or distribution without explicit permission
